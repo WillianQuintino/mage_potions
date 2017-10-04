@@ -1,4 +1,4 @@
-<? php
+<?php
   //Função para Coneção no db
   function db_connection(){
     //Recebe variaveis derinidas em ../config/db-config.php.
