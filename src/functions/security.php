@@ -1,12 +1,12 @@
 <?php
   //funtion for make a key for encrypt
-  function makeKey($nikename, $password){
-    //split nikename and password
-    $nikename_key = str_split($nikename, 3);
+  function makeKey($nickname, $password){
+    //split nickname and password
+    $nickname_key = str_split($nickname, 3);
     $password_key = str_split($password, 3);
 
     //using firt part split for make key
-    $key = $nikename_key[0].$password_key[0];
+    $key = $nickname_key[0].$password_key[0];
 
     $key = openssl_digest ($key , "sha256");
     return $key;
