@@ -25,7 +25,7 @@
           <form id="Login" name="Login" method="post" action="login.php">
             <ul>
               <li>
-                <input type="text" placeholder="Nikename" id="nickname" name="nikenamePost" size="30" onblur="CheckBlank(this)" />
+                <input type="text" placeholder="Nickname" id="nickname" name="nicknamePost" size="30" onblur="CheckBlank(this)" />
               </li>
               <li>
                 <input type="password" placeholder="Password" id="password" name="passwordPost" type="password" />
