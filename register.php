@@ -61,7 +61,7 @@ if (!isset($_POST['passwordPost'])) {
     $nickname    = decrypt($_POST['nicknamePost'], $key);
     $password    = $_POST['passwordPost'];
     $email       = decrypt($_POST['emailPost'], $key);
-    $date_ts     = time();
+    $date_ts     = date();//time();
     $user_active = 0; //value 0 = not active | 1 = active
 
     if ($link) {
